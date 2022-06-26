@@ -1,0 +1,36 @@
+Problem
+Chef's current rating is XX, and he wants to improve it. It is generally recommended that a person with rating XX should solve problems whose difficulty lies in the range [X, X+200][X,X+200], i.e, problems whose difficulty is at least XX and at most X+200X+200.
+
+You find out that Chef is currently solving problems with a difficulty of YY.
+
+Is Chef following the recommended practice or not?
+
+Input Format
+The first line of input will contain a single integer TT, denoting the number of test cases. The description of the test cases follows.
+Each test case consists of a single line of input, containing two space-separated integers X, YX,Y.
+Output Format
+For each test case, output on a new line YES if Chef is following the recommended practice style, and NO otherwise.
+
+Each letter of the output may be printed in either lowercase or uppercase. For example, the strings YES, yEs, and Yes will be considered identical.
+
+Constraints
+1 \leq T \leq 1001≤T≤100
+1 \leq X, Y \leq 40001≤X,Y≤4000
+Solution
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+	int t,x,y;
+	scanf("%d",&t);
+	while(t--)
+	{
+	scanf("%d",&x);
+	scanf("%d",&y);
+	if(y>=x && y<=(x+200))
+	printf("Yes\n");
+	else
+	printf("No\n");
+	}
+	return 0;
+}
